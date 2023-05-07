@@ -1680,6 +1680,13 @@ button,
   margin: 0;
 }
 
+.title--md {
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 71px;
+}
+
 .title--h2-sm {
   font-size: 46px;
   font-weight: 700;
@@ -1781,7 +1788,7 @@ button,
 }
 
 .logo__link span {
-  color: #FFE791;
+  color: #ffe791;
 }
 
 .nav {
@@ -2385,6 +2392,71 @@ button,
   animation: down1 30s linear 0s infinite normal none running;
 }
 
+.rates {
+  padding: 100px 0;
+}
+
+.rates__title {
+  margin: 0 0 0 30px;
+}
+
+.rates__text {
+  color: #7a7a7a;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  text-align: center;
+  margin: 0 0 0 100px;
+}
+
+.rates__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.rates__btn {
+  display: block;
+}
+
+.rates__features {
+  grid-column: 1/-1;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  will-change: max-height;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.rates__features.is-active {
+  opacity: 1;
+}
+
+.rates-card__content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  will-change: max-height;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.rates-card__content.is-active {
+  opacity: 1;
+}
+
 @media (min-width: 767px) {
   .swiper-slide {
     height: auto;
@@ -2526,6 +2598,10 @@ button,
   .ornament--ten {
     left: 110px;
     top: 30px;
+  }
+
+  .ornament--eleven {
+    display: none;
   }
 
   .reason {

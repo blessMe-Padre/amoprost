@@ -20,7 +20,6 @@
   background: url("../img/svg/ellipse-black.svg") no-repeat center/cover;
   transform: translate(-50%, -50%);
 
-
   @include vp-1200 {
     background: none;
   }

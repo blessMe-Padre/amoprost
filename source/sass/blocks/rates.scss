@@ -1,0 +1,41 @@
+.rates {
+  padding: 100px 0;
+}
+
+.rates__title {
+  margin: 0 0 0 30px;
+}
+
+.rates__text {
+  color: $color-boulder;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  text-align: center;
+  margin: 0 0 0 100px;
+}
+
+.rates__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.rates__btn {
+  display: block;
+}
+
+.rates__features {
+  grid-column: 1/-1;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  will-change: max-height;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.rates__features.is-active {
+  opacity: 1;
+}

@@ -1,0 +1,12 @@
+.rates-card__content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  will-change: max-height;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.rates-card__content.is-active {
+  opacity: 1;
+}
