@@ -1,28 +1,34 @@
 const initAccordion = () => {
   // обработка аккордеона верхнего уровня
   const initGeneralAccordion = () => {
-    const generalBtn = document.querySelectorAll('.rates-btn');
+    const generalBtn = document.querySelector('.rates-btn');
+    const secondBtn = document.querySelector('.rates-features-btn');
     const content = document.querySelector('.rates__features');
+    const ratesCard = document.querySelector('.rates-card--popular');
 
-    generalBtn.forEach((button) => {
-      button.addEventListener('click', (evt) => {
-        evt.preventDefault();
+    generalBtn.addEventListener('click', (evt) => {
+      evt.preventDefault();
+      generalBtn.classList.toggle('is-active');
+      ratesCard.classList.toggle('is-active');
+      content.classList.toggle('is-active');
 
-        button.classList.toggle('is-active');
-        content.classList.toggle('is-active');
+      if (generalBtn.classList.contains('is-active')) {
+        content.style.maxHeight = content.scrollHeight + 'px';
+      } else {
+        content.style.maxHeight = null;
+      }
+    });
 
-        if (button.classList.contains('is-active')) {
-          content.style.maxHeight = content.scrollHeight + 'px';
-          button.classList.remove('is-active');
-        } else {
-          content.style.maxHeight = null;
-        }
-      });
+    secondBtn.addEventListener('click', (evt) => {
+      evt.preventDefault();
+      generalBtn.classList.remove('is-active');
+      content.classList.remove('is-active');
+      content.style.maxHeight = null;
     });
   };
 
   // работа вложенного аккордеона
-  const initNesdedAccordion = () => {
+  const initNestedAccordion = () => {
     const accordions = document.querySelectorAll('.rates-card');
 
     accordions.forEach((accordion) => {
@@ -46,7 +52,8 @@ const initAccordion = () => {
   };
 
   initGeneralAccordion();
-  initNesdedAccordion();
+  initNestedAccordion();
 };
 
 export { initAccordion };
+
