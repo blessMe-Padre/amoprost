@@ -1,0 +1,200 @@
+.ornament {
+  transition: transform 0.3s;
+  position: absolute;
+}
+
+.ornament--first {
+  top: 100px;
+  right: -350px;
+  height: 450px;
+  width: 450px;
+  background: url("../img/svg/ellipse-1.svg") no-repeat center/cover;
+  animation: pulse1 25s linear infinite alternate forwards;
+
+  @include vp-1200 {
+    right: -100px;
+    top: 350px;
+    height: 270px;
+    width: 81px;
+    background: url("../img/svg/elliples-half-1.svg") no-repeat center/cover;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+
+.ornament--second {
+  top: 100px;
+  left: -250px;
+  height: 320px;
+  width: 320px;
+  background: url("../img/svg/ellipse-2.svg") no-repeat center/cover;
+  animation: pulse2 7s linear infinite alternate forwards;
+
+  @include vp-1200 {
+    top: -100px;
+    left: -50px;
+    width: 85px;
+    height: 70px;
+    background: url("../img/svg/elliples-half-2.svg") no-repeat center/cover;
+  }
+}
+
+.ornament--third {
+  bottom: 200px;
+  left: 50px;
+  height: 85px;
+  width: 85px;
+  background: url("../img/svg/ellipse-3.svg") no-repeat center/cover;
+  animation: pulse2 25s linear infinite alternate forwards;
+
+  @include vp-767 {
+    bottom: 450px;
+    left: -100px;
+  }
+}
+
+.ornament--fourth {
+  left: 230px;
+  top: 270px;
+  height: 20px;
+  width: 20px;
+  background: url("../img/svg/ellipse-small-yellow.svg") no-repeat center/cover;
+  animation: pulse2 25s linear infinite alternate forwards;
+
+  @include vp-1200 {
+    left: auto;
+    right: 100px;
+    top: 200px;
+  }
+
+  @include vp-767 {
+    right: 0;
+  }
+}
+
+.ornament--fifth {
+  left: 50px;
+  top: 470px;
+  height: 20px;
+  width: 20px;
+  background: url("../img/svg/ellipse-small-white.svg") no-repeat center/cover;
+  animation: pulse3 7s linear infinite alternate forwards;
+}
+
+.ornament--six {
+  right: 230px;
+  top: 250px;
+  height: 20px;
+  width: 20px;
+  background: url("../img/svg/ellipse-small-white.svg") no-repeat center/cover;
+  animation: pulse3 7s linear infinite alternate forwards;
+
+  @include vp-1200 {
+    display: none;
+  }
+}
+
+.ornament--seven {
+  right: 150px;
+  top: 570px;
+  height: 20px;
+  width: 20px;
+  background: url("../img/svg/ellipse-small-white.svg") no-repeat center/cover;
+  animation: pulse3 7s linear infinite alternate forwards;
+}
+
+.ornament--eight {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 20px;
+  width: 20px;
+
+  @include vp-767 {
+    display: none;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -113px;
+    left: 10px;
+    height: 113px;
+    width: 197px;
+    background: url("../img/svg/ellipse-half-slim-black.svg") no-repeat center/cover;
+    z-index: 2;
+
+    @include vp-1200 {
+      display: none;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 10px;
+    height: 84px;
+    width: 197px;
+    background: url("../img/svg/ellipse-half-slim-white.svg") no-repeat center/cover;
+    z-index: 2;
+
+    @include vp-1200 {
+      width: 73px;
+      height: 93px;
+      background: url("../img/svg/ellipse-5.svg") no-repeat center/cover;
+    }
+  }
+}
+
+.ornament--nine {
+  bottom: -250px;
+  left: -250px;
+  height: 450px;
+  width: 450px;
+  background: url("../img/svg/ellipse-1.svg") no-repeat center/cover;
+  animation: pulse1 25s linear infinite alternate forwards;
+
+  @include vp-1200 {
+    top: 0;
+    right: 0;
+    left: auto;
+    width: 68px;
+    height: 140px;
+    background: url("../img/svg/ellipse-6.svg") no-repeat center/cover;
+    animation: none;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.ornament--ten {
+  left: 260px;
+  top: 125px;
+  height: 38px;
+  width: 38px;
+  background: url("../img/svg/ellipse-small-fat-yellow.svg") no-repeat center/cover;
+
+  @include vp-1200 {
+    left: 110px;
+    top: 30px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.ornament--eleven {
+  top: 545px;
+  left: 355px;
+  height: 85px;
+  width: 85px;
+  background: url("../img/svg/ellipse-3.svg") no-repeat center/cover;
+  animation: pulse2 25s linear infinite alternate forwards;
+}

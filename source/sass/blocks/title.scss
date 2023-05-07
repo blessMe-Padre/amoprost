@@ -1,0 +1,21 @@
+.title {
+  color: $color-shaft;
+  font-family: "Inter";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 71px;
+  text-align: center;
+  margin: 0;
+}
+
+.title--h2-sm {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 50px;
+  margin: 10px;
+}
+
+.title--white {
+  color: $color-default-white;
+}

@@ -1,0 +1,189 @@
+.whom {
+  padding: 75px 0;
+}
+
+.whom__slider {
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.whom__text {
+  color: $color-shaft;
+  font-size: 18px;
+  text-align: center;
+  margin: 30px 0 0 0;
+}
+
+.whom__list {
+  margin: 75px 0 0 0;
+  padding: 0;
+  min-width: 0;
+  list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @include vp-767 {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+}
+
+.swiper-slide {
+  @include vp-767 {
+    height: auto;
+  }
+}
+
+.whom__item {
+  display: flex;
+  flex-direction: column;
+  max-width: 305px;
+  min-height: 270px;
+  align-items: center;
+  border-radius: 25px;
+  box-shadow: 0 0 8px 0 rgba(34, 60, 80, .1);
+  margin: 10px;
+  text-align: center;
+  min-width: 0;
+  transition: background-color 0.3s ease,
+    color 0.3s ease;
+
+  @include vp-767 {
+    max-width: 100%;
+  }
+}
+
+.whom__item:hover {
+  background-color: $color-shaft;
+  color: $color-default-white;
+}
+
+@media(min-width: 767px) {
+  .swiper-slide {
+    height: auto;
+  }
+}
+
+.whom__item-text {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  padding: 25px;
+}
+
+.whom__img {
+  height: 150px;
+  width: 100%;
+}
+
+.whom__img--services {
+  background: url("../img/svg/whom/1.svg") no-repeat bottom;
+}
+
+.whom__img--services::before {
+  content: '';
+  position: absolute;
+  width: 56px;
+  height: 76px;
+  top: 35px;
+  right: 0;
+  background: url("../img/svg/ellipse-4.svg") no-repeat bottom;
+}
+
+.whom__item:hover .whom__img--services {
+  background: url("../img/svg/whom/1-white.svg") no-repeat bottom;
+}
+
+.whom__img--shops {
+  background: url("../img/svg/whom/2.svg") no-repeat bottom;
+}
+
+.whom__img--shops::before {
+  content: '';
+  position: absolute;
+  width: 56px;
+  height: 76px;
+  top: 35px;
+  left: 0;
+  background: url("../img/svg/ellipse-4-yellow.svg") no-repeat bottom;
+}
+
+.whom__item:hover .whom__img--shops {
+  background: url("../img/svg/whom/2-white.svg") no-repeat bottom;
+}
+
+.whom__img--agencies {
+  background: url("../img/svg/whom/3.svg") no-repeat bottom;
+}
+
+.whom__img--agencies::before {
+  content: '';
+  position: absolute;
+  width: 56px;
+  height: 76px;
+  top: 35px;
+  right: 0;
+  background: url("../img/svg/ellipse-4.svg") no-repeat bottom;
+}
+
+.whom__item:hover .whom__img--agencies {
+  background: url("../img/svg/whom/3-white.svg") no-repeat bottom;
+}
+
+.whom__img--trade {
+  background: url("../img/svg/whom/4.svg") no-repeat bottom;
+}
+
+.whom__img--trade::before {
+  content: '';
+  position: absolute;
+  width: 56px;
+  height: 76px;
+  top: 35px;
+  left: 0;
+  background: url("../img/svg/ellipse-4.svg") no-repeat bottom;
+  transform: rotate(180deg);
+}
+
+.whom__item:hover .whom__img--trade {
+  background: url("../img/svg/whom/4-white.svg") no-repeat bottom;
+}
+
+.whom__img--educational {
+  background: url("../img/svg/whom/5.svg") no-repeat bottom;
+}
+
+.whom__img--educational::before {
+  content: '';
+  position: absolute;
+  width: 56px;
+  height: 76px;
+  top: 35px;
+  right: 0;
+  background: url("../img/svg/ellipse-4.svg") no-repeat bottom;
+}
+
+.whom__item:hover .whom__img--educational {
+  background: url("../img/svg/whom/5-white.svg") no-repeat bottom;
+}
+
+.whom__img--dealerships {
+  background: url("../img/svg/whom/6.svg") no-repeat bottom;
+}
+
+.whom__img--dealerships::before {
+  content: '';
+  position: absolute;
+  width: 56px;
+  height: 76px;
+  top: 35px;
+  left: 0;
+  background: url("../img/svg/ellipse-4.svg") no-repeat bottom;
+  transform: rotate(180deg);
+}
+
+.whom__item:hover .whom__img--dealerships {
+  background: url("../img/svg/whom/6-white.svg") no-repeat bottom;
+}

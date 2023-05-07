@@ -1,0 +1,39 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @include vp-1200 {
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 30px;
+  }
+}
+
+.nav__item {
+  @include vp-1200 {
+    margin-bottom: 15px;
+  }
+}
+
+.nav__item a {
+  color: $color-default-white;
+  background-color: transparent;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 2px;
+  padding: 10px;
+  white-space: nowrap;
+
+  @include vp-1200 {
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,59 @@
+@keyframes pulse1 {
+  from {
+    transform: translateX(0) translateY(0) rotate(0);
+  }
+
+  to {
+    transform: translateX(-100px) translateY(-100px) rotate(360deg);
+  }
+}
+
+@keyframes pulse2 {
+  from {
+    transform: translateX(0) translateY(0);
+  }
+
+  to {
+    transform: translateX(50px) translateY(50px);
+  }
+}
+
+@keyframes pulse3 {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(50px);
+  }
+}
+
+@keyframes rise {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-1120px);
+  }
+}
+
+@keyframes down1 {
+  from {
+    transform: translateY(-1120px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes toLeft {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-1508px);
+  }
+}
