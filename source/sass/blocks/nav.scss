@@ -24,7 +24,7 @@
   }
 }
 
-.nav__item a {
+.nav__link {
   color: $color-default-white;
   background-color: transparent;
   font-weight: 700;
@@ -32,8 +32,13 @@
   margin: 2px;
   padding: 10px;
   white-space: nowrap;
+  transition: color 0.3s ease;
 
   @include vp-1200 {
     padding-left: 0;
   }
+}
+
+.nav__link:hover {
+  color: $color-golden;
 }

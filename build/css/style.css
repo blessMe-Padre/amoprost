@@ -1849,7 +1849,7 @@ button,
   padding: 0;
 }
 
-.nav__item a {
+.nav__link {
   color: #ffffff;
   background-color: transparent;
   font-weight: 700;
@@ -1857,6 +1857,13 @@ button,
   margin: 2px;
   padding: 10px;
   white-space: nowrap;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.nav__link:hover {
+  color: #ffe791;
 }
 
 .toggle-btn {
@@ -3174,7 +3181,7 @@ button,
     margin-bottom: 15px;
   }
 
-  .nav__item a {
+  .nav__link {
     padding-left: 0;
   }
 
