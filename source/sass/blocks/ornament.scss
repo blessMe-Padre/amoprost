@@ -43,7 +43,7 @@
 }
 
 .ornament--third {
-  bottom: 200px;
+  bottom: 150px;
   left: 50px;
   height: 85px;
   width: 85px;
@@ -52,7 +52,7 @@
 
   @include vp-767 {
     bottom: 450px;
-    left: -100px;
+    left: -75px;
   }
 }
 
@@ -202,3 +202,47 @@
     display: none;
   }
 }
+
+.ornament--twelve {
+  top: -100px;
+  right: -268px;
+  height: 450px;
+  width: 450px;
+  background: url("../img/svg/ellipse-1.svg") no-repeat center/cover;
+
+  @include vp-1200 {
+    top: 0;
+    right: 0;
+    left: auto;
+    width: 68px;
+    height: 140px;
+    background: url("../img/svg/ellipse-6.svg") no-repeat center/cover;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.ornament--thirteen {
+  top: 100px;
+  left: -250px;
+  height: 320px;
+  width: 320px;
+  background: url("../img/svg/ellipse-2.svg") no-repeat center/cover;
+  animation: pulse2 7s linear infinite alternate forwards;
+
+  @include vp-1200 {
+    top: 0;
+    left: -50px;
+    width: 85px;
+    height: 70px;
+    background: url("../img/svg/elliples-half-2.svg") no-repeat center/cover;
+  }
+
+  @include vp-767 {
+    animation: none;
+  }
+}
+
+.ornament--fourteen {}

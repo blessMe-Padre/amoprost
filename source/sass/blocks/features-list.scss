@@ -13,7 +13,7 @@
 .features-list__item {
   box-shadow: 0 -6px 6px -6px hsla(0, 0%, 41%, .49);
   display: grid;
-  grid-template-columns: 1fr 22% 24.5% 21.8%;
+  grid-template-columns: 1fr 22% 24.5% 21.75%;
   min-height: 75px;
 
   @include vp-1200 {

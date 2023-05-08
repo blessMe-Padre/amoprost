@@ -14,6 +14,15 @@
   font-style: normal;
   font-weight: 700;
   line-height: 71px;
+
+  @include vp-1200 {
+    font-size: 33px;
+    line-height: 1.2;
+  }
+
+  @include vp-767 {
+    font-size: 25px;
+  }
 }
 
 .title--h2-sm {
