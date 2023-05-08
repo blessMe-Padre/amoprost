@@ -1,0 +1,50 @@
+.about-card {
+  position: relative;
+  user-select: none;
+  padding: 150px 25px 25px;
+  border-radius: 25px;
+  box-shadow: 0 0 8px 0 rgba(34, 60, 80, .1);
+  transition: background-color 0.4s ease, transform 0.3s ease;
+  margin: 15px 15px;
+  max-width: 305px;
+
+  @include vp-1200 {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+.about-card:hover {
+  background-color: $color-shaft;
+  transform: scale(1.05);
+
+  .about-card__title {
+    color: $color-default-white;
+  }
+
+  .about-card__text {
+    color: $color-default-white;
+  }
+
+  @include vp-1200 {
+    transform: none;
+  }
+}
+
+.about-card__title {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 36px 0;
+  transition: color 0.4s ease;
+}
+
+.about-card__text {
+  color: $color-boulder;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: center;
+  margin: 0 0 30px 0;
+  transition: color 0.4s ease;
+}

@@ -2115,6 +2115,30 @@ button,
   animation: pulse2 7s linear infinite alternate forwards;
 }
 
+.ornament--fourteen {
+  top: 55px;
+  left: 0;
+  height: 86px;
+  width: 56px;
+  background: url("../img/svg/about-card-1.svg") no-repeat center/cover;
+}
+
+.ornament--fifteen {
+  top: 15px;
+  left: 50%;
+  height: 25px;
+  width: 25px;
+  background: url("../img/svg/about-card-2.svg") no-repeat center/cover;
+}
+
+.ornament--sixteen {
+  top: 0;
+  right: 0;
+  height: 130px;
+  width: 100px;
+  background: url("../img/svg/about-card-3.svg") no-repeat center/cover;
+}
+
 .whom {
   padding: 75px 0;
 }
@@ -2168,6 +2192,10 @@ button,
   -webkit-transition: background-color 0.3s ease, color 0.3s ease;
   -o-transition: background-color 0.3s ease, color 0.3s ease;
   transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .whom__item:hover {
@@ -2796,6 +2824,85 @@ button,
   text-align: center;
 }
 
+.about {
+  padding: 75px 0;
+}
+
+.about__wrapper {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.about__list {
+  margin: 100px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+  min-width: 0;
+}
+
+.about-card {
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 150px 25px 25px;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 0 8px 0 rgba(34, 60, 80, 0.1);
+  box-shadow: 0 0 8px 0 rgba(34, 60, 80, 0.1);
+  -webkit-transition: background-color 0.4s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.4s ease, -webkit-transform 0.3s ease;
+  -o-transition: background-color 0.4s ease, transform 0.3s ease;
+  transition: background-color 0.4s ease, transform 0.3s ease;
+  transition: background-color 0.4s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+  margin: 15px 15px;
+  max-width: 305px;
+}
+
+.about-card:hover {
+  background-color: #262626;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.about-card:hover .about-card__title {
+  color: #ffffff;
+}
+
+.about-card:hover .about-card__text {
+  color: #ffffff;
+}
+
+.about-card__title {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 36px 0;
+  -webkit-transition: color 0.4s ease;
+  -o-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}
+
+.about-card__text {
+  color: #7a7a7a;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: center;
+  margin: 0 0 30px 0;
+  -webkit-transition: color 0.4s ease;
+  -o-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}
+
 @media (min-width: 767px) {
   .swiper-slide {
     height: auto;
@@ -3081,6 +3188,22 @@ button,
     font-size: 18px;
     line-height: 1.2;
   }
+
+  .about__list {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  .about-card {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .about-card:hover {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -3168,12 +3291,13 @@ button,
     justify-content: flex-start;
   }
 
-  .swiper-slide {
-    height: auto;
-  }
-
   .whom__item {
     max-width: 100%;
+    margin: 0;
+  }
+
+  .whom__item .swiper-slide {
+    height: auto;
   }
 
   .rates__wrapper {
@@ -3209,6 +3333,10 @@ button,
     width: 60px;
     margin-bottom: 30px;
     background-image: url("../img/difference-arrow-2.png");
+  }
+
+  .about__list {
+    margin: 50px 0 0 0;
   }
 }
 

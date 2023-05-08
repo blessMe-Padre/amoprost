@@ -245,4 +245,26 @@
   }
 }
 
-.ornament--fourteen {}
+.ornament--fourteen {
+  top: 55px;
+  left: 0;
+  height: 86px;
+  width: 56px;
+  background: url("../img/svg/about-card-1.svg") no-repeat center/cover;
+}
+
+.ornament--fifteen {
+  top: 15px;
+  left: 50%;
+  height: 25px;
+  width: 25px;
+  background: url("../img/svg/about-card-2.svg") no-repeat center/cover;
+}
+
+.ornament--sixteen {
+  top: 0;
+  right: 0;
+  height: 130px;
+  width: 100px;
+  background: url("../img/svg/about-card-3.svg") no-repeat center/cover;
+}

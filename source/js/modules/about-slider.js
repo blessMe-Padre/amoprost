@@ -1,8 +1,8 @@
-const initWhomSlider = () => {
-  const sliderWhom = document.querySelector('.whom__slider');
+const initAboutSlider = () => {
+  const sliderAbout = document.querySelector('.about__wrapper');
 
-  if (sliderWhom) {
-    let breakpoint = window.matchMedia('(min-width:48.25em)');
+  if (sliderAbout) {
+    let breakpoint = window.matchMedia('(min-width:1200px)');
     let swiper;
 
     const breakpointChecker = function () {
@@ -14,29 +14,33 @@ const initWhomSlider = () => {
 
       } else if (breakpoint.matches === false) {
         // eslint-disable-next-line consistent-return
-        return whomSliderInit();
+        return aboutSliderInit();
       }
     };
 
-
-    const whomSliderInit = function () {
-      swiper = new Swiper(sliderWhom, {
+    const aboutSliderInit = function () {
+      swiper = new Swiper(sliderAbout, {
         loop: true,
-        spaceBetween: 20,
+        spaceBetween: 10,
         init: true,
         slidesPerView: 1,
         breakpoints: {
-          425: {
-            slidesPerView: 1.5,
-            spaceBetween: 30,
+          767: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1023: {
+            slidesPerView: 3,
+            spaceBetween: 35,
           },
         },
+
       });
     };
 
     breakpoint.addEventListener('change', breakpointChecker);
     breakpointChecker();
   }
-}
+};
 
-export { initWhomSlider };
+export { initAboutSlider }
