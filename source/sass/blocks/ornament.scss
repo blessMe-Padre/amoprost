@@ -268,3 +268,69 @@
   width: 100px;
   background: url("../img/svg/about-card-3.svg") no-repeat center/cover;
 }
+
+.ornament--seventeen {
+  top: -130px;
+  left: -248px;
+  height: 450px;
+  width: 450px;
+  background: url("../img/svg/ellipse-7.svg") no-repeat center/cover;
+
+  @include vp-1200 {
+    left: -320px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.ornament--eighteen {
+  top: -60px;
+  right: 20px;
+  height: 160px;
+  width: 160px;
+  background: url("../img/circle-slim-white.png") no-repeat center/cover;
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.ornament--nineteen {
+  top: -60px;
+  right: 20px;
+  height: 61px;
+  width: 160px;
+  background: url("../img/ellipse-half-black.png") no-repeat center/cover;
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.ornament--twenty {
+  top: 230px;
+  left: 200px;
+  height: 34px;
+  width: 34px;
+  background: url("../img/circle-small.png") no-repeat center/cover;
+  animation: pulse3 7s linear infinite alternate forwards;
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.ornament--twentyone {
+  top: 150px;
+  right: 80px;
+  height: 36px;
+  width: 36px;
+  background: url("../img/svg/ellipse-small-fat-yellow.svg") no-repeat center/cover;
+  animation: pulse3 7s linear infinite alternate forwards;
+
+  @include vp-767 {
+    display: none;
+  }
+}

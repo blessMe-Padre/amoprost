@@ -1796,6 +1796,21 @@ button,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.contact a:hover {
+  color: #ffe791;
+}
+
+.contact--footer {
+  margin-bottom: 10px;
+}
+
+.contact--footer a {
+  font-size: 20px;
 }
 
 .contact__wrapper {
@@ -1837,16 +1852,26 @@ button,
   justify-content: space-between;
 }
 
+.nav--footer {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 25px 0 55px;
+}
+
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
+  max-width: 480px;
 }
 
 .nav__link {
@@ -2178,6 +2203,50 @@ button,
   height: 130px;
   width: 100px;
   background: url("../img/svg/about-card-3.svg") no-repeat center/cover;
+}
+
+.ornament--seventeen {
+  top: -130px;
+  left: -248px;
+  height: 450px;
+  width: 450px;
+  background: url("../img/svg/ellipse-7.svg") no-repeat center/cover;
+}
+
+.ornament--eighteen {
+  top: -60px;
+  right: 20px;
+  height: 160px;
+  width: 160px;
+  background: url("../img/circle-slim-white.png") no-repeat center/cover;
+}
+
+.ornament--nineteen {
+  top: -60px;
+  right: 20px;
+  height: 61px;
+  width: 160px;
+  background: url("../img/ellipse-half-black.png") no-repeat center/cover;
+}
+
+.ornament--twenty {
+  top: 230px;
+  left: 200px;
+  height: 34px;
+  width: 34px;
+  background: url("../img/circle-small.png") no-repeat center/cover;
+  -webkit-animation: pulse3 7s linear infinite alternate forwards;
+  animation: pulse3 7s linear infinite alternate forwards;
+}
+
+.ornament--twentyone {
+  top: 150px;
+  right: 80px;
+  height: 36px;
+  width: 36px;
+  background: url("../img/svg/ellipse-small-fat-yellow.svg") no-repeat center/cover;
+  -webkit-animation: pulse3 7s linear infinite alternate forwards;
+  animation: pulse3 7s linear infinite alternate forwards;
 }
 
 .whom {
@@ -3108,6 +3177,25 @@ button,
   margin: 0;
 }
 
+.footer {
+  position: relative;
+  padding: 75px 0 25px;
+  background-color: #262626;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer__address {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+.footer__text {
+  margin: 0 0 10px 0;
+}
+
 @media (min-width: 767px) {
   .swiper-slide {
     height: auto;
@@ -3164,6 +3252,13 @@ button,
 
   .logo {
     margin-bottom: 50px;
+  }
+
+  .nav--footer .nav__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
 
   .nav__list {
@@ -3275,6 +3370,10 @@ button,
     width: 85px;
     height: 70px;
     background: url("../img/svg/elliples-half-2.svg") no-repeat center/cover;
+  }
+
+  .ornament--seventeen {
+    left: -320px;
   }
 
   .reason {
@@ -3429,6 +3528,7 @@ button,
 
   .title--md {
     font-size: 25px;
+    padding: 0 10px;
   }
 
   .main__inner {
@@ -3486,6 +3586,26 @@ button,
   .ornament--thirteen {
     -webkit-animation: none;
     animation: none;
+  }
+
+  .ornament--seventeen {
+    display: none;
+  }
+
+  .ornament--eighteen {
+    display: none;
+  }
+
+  .ornament--nineteen {
+    display: none;
+  }
+
+  .ornament--twenty {
+    display: none;
+  }
+
+  .ornament--twentyone {
+    display: none;
   }
 
   .whom__list {

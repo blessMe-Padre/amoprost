@@ -4,12 +4,25 @@
   justify-content: space-between;
 }
 
+.nav--footer {
+  justify-content: center;
+  margin: 25px 0 55px;
+
+  .nav__list {
+    @include vp-1200 {
+      flex-direction: row;
+    }
+  }
+}
+
 .nav__list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
+  max-width: 480px;
 
   @include vp-1200 {
     flex-direction: column;
