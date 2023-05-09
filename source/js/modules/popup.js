@@ -8,6 +8,7 @@ const initPopup = () => {
   const page = document.querySelector('.page');
   const wrapper = document.querySelector('.wrapper');
   const header = document.querySelector('.header');
+  const input = document.querySelector('input[type="text"]');
 
   const lockPaddingValue = window.innerWidth - wrapper.offsetWidth + 'px';
 
@@ -17,6 +18,7 @@ const initPopup = () => {
       page.classList.add('scroll-lock');
       header.style.paddingRight = lockPaddingValue;
       wrapper.style.paddingRight = lockPaddingValue;
+      input.focus();
     };
 
     const closeModalWindow = () => {

@@ -1269,8 +1269,16 @@ button.swiper-pagination-bullet {
 
 @font-face {
   font-style: normal;
-  font-weight: 600;
-  font-family: "Montserrat";
+  font-weight: 700;
+  font-family: "Inter";
+  font-display: swap;
+  src: url("../fonts/Inter-Bold2.woff2") format("woff2"), url("../fonts/Inter-Bold2.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Inter";
   font-display: swap;
   src: url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff");
 }
@@ -1278,9 +1286,25 @@ button.swiper-pagination-bullet {
 @font-face {
   font-style: normal;
   font-weight: 700;
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-display: swap;
-  src: url("../fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.woff") format("woff");
+  src: url("../fonts/Inter-Bold2.woff2") format("woff2"), url("../fonts/Inter-Bold2.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
 }
 
 *,
@@ -1608,25 +1632,25 @@ button,
 
 @-webkit-keyframes down1 {
   from {
-    -webkit-transform: translateY(-1120px);
-    transform: translateY(-1120px);
+    -webkit-transform: translateY(-1540px);
+    transform: translateY(-1540px);
   }
 
   to {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    -webkit-transform: translateY(-420px);
+    transform: translateY(-420px);
   }
 }
 
 @keyframes down1 {
   from {
-    -webkit-transform: translateY(-1120px);
-    transform: translateY(-1120px);
+    -webkit-transform: translateY(-1540px);
+    transform: translateY(-1540px);
   }
 
   to {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    -webkit-transform: translateY(-420px);
+    transform: translateY(-420px);
   }
 }
 
@@ -1690,7 +1714,7 @@ button,
 
 .page {
   color: #262626;
-  font-family: "Inter", "Arial", "Tahoma", sans-serif;
+  font-family: "Roboto", "Arial", "Tahoma", sans-serif;
   font-size: 16px;
 }
 
@@ -1707,7 +1731,7 @@ button,
 
 .title {
   color: #262626;
-  font-family: "Inter";
+  font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 50px;
   font-style: normal;
   font-weight: 700;
@@ -1717,10 +1741,8 @@ button,
 }
 
 .title--md {
-  font-size: 50px;
-  font-style: normal;
+  font-family: "Roboto", "Tahoma", sans-serif;
   font-weight: 700;
-  line-height: 71px;
 }
 
 .title--h2-sm {
@@ -1749,7 +1771,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  z-index: 2;
+  z-index: 99;
 }
 
 .header__wrapper {
@@ -1961,7 +1983,7 @@ button,
 
 .main {
   background-color: #262626;
-  padding-top: 75px;
+  padding-top: 100px;
   min-height: 860px;
 }
 
@@ -1999,10 +2021,11 @@ button,
   color: #ffffff;
   font-size: 50px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 56px;
   max-width: 980px;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .main__btn {

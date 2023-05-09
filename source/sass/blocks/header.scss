@@ -9,7 +9,7 @@
   color: $color-default-white;
   display: flex;
   align-items: center;
-  z-index: 2;
+  z-index: 99;
 
   @include vp-1200 {
     min-height: 0;

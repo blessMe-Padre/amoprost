@@ -1,6 +1,6 @@
 .main {
   background-color: $color-shaft;
-  padding-top: 75px;
+  padding-top: 100px;
   min-height: 860px;
 
   @include vp-1200 {
@@ -53,10 +53,11 @@
   color: $color-default-white;
   font-size: 50px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 56px;
   max-width: 980px;
   text-align: center;
+  margin-bottom: 30px;
 
   @include vp-1200 {
     font-size: 33px;
