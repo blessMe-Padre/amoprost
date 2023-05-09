@@ -6,6 +6,8 @@ import { initPopup } from './modules/popup';
 import { initScroll } from './modules/scroll';
 import { initTimer } from './modules/timer';
 import { initWhomSlider } from './modules/whom-slider';
+import { initPhoneMask } from './modules/phone-mask';
+import { initFormValidations } from './modules/form';
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -18,4 +20,6 @@ window.addEventListener('DOMContentLoaded', () => {
   initCircle();
   initScroll();
   initPopup();
+  initPhoneMask();
+  initFormValidations();
 });

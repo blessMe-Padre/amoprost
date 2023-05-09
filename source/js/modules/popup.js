@@ -6,20 +6,22 @@ const initPopup = () => {
   const popup = document.querySelector('.popup');
   const popupBody = document.querySelector('.popup__body');
   const page = document.querySelector('.page');
+  const wrapper = document.querySelector('.wrapper');
+  const lockPaddingValue = window.innerWidth - wrapper.offsetWidth + 'px';
 
   if (popup) {
     popupOpenBtn.forEach((button) => {
       button.addEventListener('click', () => {
         popup.classList.add('is-active');
         page.classList.add('scroll-lock');
-        page.classList.add('page--lock');
+        wrapper.style.paddingRight = lockPaddingValue;
       });
     });
 
     closeBtn.addEventListener('click', () => {
       popup.classList.remove('is-active');
       page.classList.remove('scroll-lock');
-      page.classList.remove('page--lock');
+      wrapper.style.paddingRight = null;
     });
 
     // закрываем окно по esc
@@ -29,7 +31,7 @@ const initPopup = () => {
           evt.preventDefault();
           popup.classList.remove('is-active');
           page.classList.remove('scroll-lock');
-          page.classList.remove('page--lock');
+          wrapper.style.paddingRight = null;
         }
       }
     });
@@ -40,6 +42,7 @@ const initPopup = () => {
         popup.classList.remove('is-active');
         page.classList.remove('scroll-lock');
         page.classList.remove('page--lock');
+        wrapper.style.paddingRight = null;
       }
     });
   }

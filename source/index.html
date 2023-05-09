@@ -655,9 +655,15 @@
             <h2 class="popup__title">Бесплатная консультация</h2>
             <p class="popup__text">Мы вам перезвоним и ответим на все вопросы</p>
             <form class="form" action="#">
-              <input type="text" required>
-              <input type="tel" name="tel">
-              <button type="submit">Отправить</button>
+              <div class="form__input">
+                <label class="form__label-name">Необходимо ввести имя</label>
+                <input type="text" name="name" placeholder="Имя">
+              </div>
+              <div class="form__input">
+                <label class="form__label-tel">телефон должен быть не менее 11 символов</label>
+                <input type="tel" name="tel" placeholder="Телефон">
+              </div>
+              <button class="form__button" type="submit">Отправить</button>
             </form>
           </div>
         </div>
