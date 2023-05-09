@@ -47,8 +47,8 @@
           <div class="main__wrapper">
             <h1 class="main__title">Внедрение и&nbsp;автоматизация amoCRM под ключ для вашего бизнеса</h1>
             <div class="main__inner">
-              <button class="main__btn">Рассчитать стоимость</button>
-              <button class="main__btn">Заказать звонок</button>
+              <button class="main__btn popup-open-btn">Рассчитать стоимость</button>
+              <button class="main__btn popup-open-btn">Заказать звонок</button>
             </div>
             <div class="main__img">
               <picture>
@@ -630,7 +630,7 @@
           <p class="timer__sub-text">Стало страшно? Вам и&nbsp;должно быть. Устанавливайте CRM и&nbsp;повышайте охваты
             своего бизнеса.</p>
 
-          <button class="timer__button">Заказать звонок</button>
+          <button class="timer__button popup-open-btn">Заказать звонок</button>
         </div>
       </section>
 
@@ -639,6 +639,27 @@
         <div class="circle__wrapper animation">
           <h3 class="circle__title">жмяк</h3>
           <p class="circle__text"></p>
+        </div>
+      </section>
+
+      <section class="popup">
+        <div class="popup__body">
+          <div class="popup__content">
+            <button class="popup__btn" aria-label="Закрыть" tabindex="1">
+              <svg width="32" height="32" focusable="false" aria-hidden="true" viewBox="0 0 24 24">
+                <path
+                  d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                </path>
+              </svg>
+            </button>
+            <h2 class="popup__title">Бесплатная консультация</h2>
+            <p class="popup__text">Мы вам перезвоним и ответим на все вопросы</p>
+            <form class="form" action="#">
+              <input type="text" required>
+              <input type="tel" name="tel">
+              <button type="submit">Отправить</button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
@@ -667,8 +688,7 @@
         <p class="footer__text">ОГРНИП 323253600027476</p>
         <address class="footer__address">Адрес: г. Владивосток, проспект 100-летия Владивостока 103, офис 435</address>
       </div>
-  </div>
-  </footer>
+    </footer>
   </div>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>

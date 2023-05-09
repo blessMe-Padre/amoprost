@@ -19,7 +19,6 @@ const initNav = () => {
       body.classList.remove('page--lock');
     }
   });
-
 };
 
-export { initNav }
+export { initNav };
