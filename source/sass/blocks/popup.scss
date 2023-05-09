@@ -43,6 +43,16 @@
   }
 }
 
+.popup__content::before {
+  position: absolute;
+  content: "";
+  width: 65px;
+  height: 172px;
+  top: 30%;
+  right: 0;
+  background: url("../img/svg/ellipse-8.svg") no-repeat center/cover;
+}
+
 .popup__title {
   color: $color-shaft;
   font-size: 33px;
@@ -83,5 +93,5 @@
 }
 
 .popup__btn:hover {
-  background-color: $color-silver;
+  background-color: rgba(0, 0, 0, 0.04);
 }

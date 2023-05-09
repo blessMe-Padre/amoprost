@@ -7,21 +7,33 @@ const initPopup = () => {
   const popupBody = document.querySelector('.popup__body');
   const page = document.querySelector('.page');
   const wrapper = document.querySelector('.wrapper');
+  const header = document.querySelector('.header');
+
   const lockPaddingValue = window.innerWidth - wrapper.offsetWidth + 'px';
 
   if (popup) {
+    const openModalWindow = () => {
+      popup.classList.add('is-active');
+      page.classList.add('scroll-lock');
+      header.style.paddingRight = lockPaddingValue;
+      wrapper.style.paddingRight = lockPaddingValue;
+    };
+
+    const closeModalWindow = () => {
+      popup.classList.remove('is-active');
+      page.classList.remove('scroll-lock');
+      header.style.paddingRight = null;
+      wrapper.style.paddingRight = null;
+    };
+
     popupOpenBtn.forEach((button) => {
       button.addEventListener('click', () => {
-        popup.classList.add('is-active');
-        page.classList.add('scroll-lock');
-        wrapper.style.paddingRight = lockPaddingValue;
+        openModalWindow();
       });
     });
 
     closeBtn.addEventListener('click', () => {
-      popup.classList.remove('is-active');
-      page.classList.remove('scroll-lock');
-      wrapper.style.paddingRight = null;
+      closeModalWindow();
     });
 
     // закрываем окно по esc
@@ -29,9 +41,7 @@ const initPopup = () => {
       if (evt.key === 'Esc' || evt.key === 'Escape') {
         if (popup.classList.contains('is-active')) {
           evt.preventDefault();
-          popup.classList.remove('is-active');
-          page.classList.remove('scroll-lock');
-          wrapper.style.paddingRight = null;
+          closeModalWindow();
         }
       }
     });
@@ -39,10 +49,7 @@ const initPopup = () => {
     // закрываем окно по клику вне попапа
     popup.addEventListener('click', function (evt) {
       if (evt.target === popupBody) {
-        popup.classList.remove('is-active');
-        page.classList.remove('scroll-lock');
-        page.classList.remove('page--lock');
-        wrapper.style.paddingRight = null;
+        closeModalWindow();
       }
     });
   }

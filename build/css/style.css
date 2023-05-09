@@ -1427,6 +1427,8 @@ button,
 
 .wrapper {
   position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3141,8 +3143,8 @@ button,
   content: "";
   top: 50%;
   left: 50%;
-  width: 400px;
-  height: 400px;
+  width: 360px;
+  height: 360px;
   border-radius: 100%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -3226,6 +3228,16 @@ button,
   text-align: center;
 }
 
+.popup__content::before {
+  position: absolute;
+  content: "";
+  width: 65px;
+  height: 172px;
+  top: 30%;
+  right: 0;
+  background: url("../img/svg/ellipse-8.svg") no-repeat center/cover;
+}
+
 .popup__title {
   color: #262626;
   font-size: 33px;
@@ -3258,7 +3270,7 @@ button,
 }
 
 .popup__btn:hover {
-  background-color: #c6c6c6;
+  background-color: rgba(0, 0, 0, 0.04);
 }
 
 .form__input {

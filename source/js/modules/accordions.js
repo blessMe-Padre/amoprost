@@ -23,6 +23,7 @@ const initAccordion = () => {
       evt.preventDefault();
       generalBtn.classList.remove('is-active');
       content.classList.remove('is-active');
+      ratesCard.classList.remove('is-active');
       content.style.maxHeight = null;
     });
   };
